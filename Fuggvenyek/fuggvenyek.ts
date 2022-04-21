@@ -21,9 +21,18 @@ function NegyzetKeruletFuggveny(a: number): number {
     return 4 * a;
 }
 
-function TeglalapKeruletTeruletEljaras(a: number,b:number): void {
-    let kerulet = 2 * (a+b);
+function TeglalapKeruletTeruletEljaras(a: number, b: number): void {
+    let kerulet = 2 * (a + b);
     let terulet = a * b;
-    document.write("<br>A téglalap kerülete:"+kerulet);
-    document.write("<br>Atéglalap területe: "+terulet);
+    document.write("<br>A téglalap kerülete:" + kerulet);
+    document.write("<br>Atéglalap területe:" + terulet);
+}
+
+function ParosEFuggveny(szam: number): boolean {
+    if (szam % 2 == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }

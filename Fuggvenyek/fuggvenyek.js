@@ -21,5 +21,13 @@ function TeglalapKeruletTeruletEljaras(a, b) {
     var kerulet = 2 * (a + b);
     var terulet = a * b;
     document.write("<br>A téglalap kerülete:" + kerulet);
-    document.write("<br>Atéglalap területe: " + terulet);
+    document.write("<br>Atéglalap területe:" + terulet);
+}
+function ParosEFuggveny(szam) {
+    if (szam % 2 == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
