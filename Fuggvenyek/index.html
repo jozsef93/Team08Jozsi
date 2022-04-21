@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itt fog megjelenni a TypeScript kód eredménye</title>
+    <title>TypeScript függvények használata</title>
 </head>
 <body>
-    <script src="teglalapKeruletTerulet.js"></script>
+    <script src="fuggvenyek.js"></script>
+    <script>
+        IloveTypeScript();
+        NegyzetKeruletTeruletEljaras(5);
+        let generaltSzam = RandomGeneralo100Fuggveny();
+        document.write("<br> A függvénnyel generált szám:"+generaltSzam);
+        let negyzetKerulet = NegyzetKeruletFuggveny(3);
+        document.write("<br>Négyzet kerülete a függvény eredménye"+negyzetKerulet)
+        TeglalapKeruletTeruletEljaras(5, 10) 
+    </script>
 </body>
 </html>
