@@ -36,3 +36,18 @@ function ParosEFuggveny(szam: number): boolean {
         return false;
     }
 }
+
+//Primszam generator
+
+function IntervallumosPrimszamGenerator(alsoHatar: number, felsoHatar: number): number {
+    let generaltSzam: number = Math.round(Math.random() * (felsoHatar-alsoHatar) + alsoHatar);
+    let oszto: number = 0;
+    for (let i = 1; i <= generaltSzam; i++) {
+        if (generaltSzam % i == 0) {
+            oszto++
+        }
+    }
+    if (oszto == 2) {
+        return generaltSzam
+    }
+}

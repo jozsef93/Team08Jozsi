@@ -31,3 +31,16 @@ function ParosEFuggveny(szam) {
         return false;
     }
 }
+//Primszam generator
+function IntervallumosPrimszamGenerator(alsoHatar, felsoHatar) {
+    var generaltSzam = Math.round(Math.random() * (felsoHatar - alsoHatar) + alsoHatar);
+    var oszto = 0;
+    for (var i = 1; i <= generaltSzam; i++) {
+        if (generaltSzam % i == 0) {
+            oszto++;
+        }
+    }
+    if (oszto == 2) {
+        return generaltSzam;
+    }
+}

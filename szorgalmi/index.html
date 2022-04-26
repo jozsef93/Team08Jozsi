@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript gyakolása</title>
+</head>
+<body>
+    <script src="fuggvenyek.js"></script>
+    <script>
+        /*document.write(RandomSzamGenerator(1,100))*/
+        let tomb = TombFeltolto(5);
+        document.write("A tömb elemei: "+tomb)
+        let legnagyobbElem =LegnagyobbElem(tomb)
+        document.write("<br>A tömb legnagyobb eleme: "+legnagyobbElem);
+        let legkisebbElem =LegkisebbElem(tomb)
+        document.write("<br>A tömb legkisebb eleme: "+legkisebbElem);
+        document.write("<br>A tömb összege: "+TombOsszege(tomb))
+        document.write("<br>A tömb átlaga: "+TombAtlaga(tomb))
+        document.write("<hr>");
+
+        let tomb1 = TombFeltolto(10);
+        let tomb2 = TombFeltolto(10);
+        document.write("<br>Tömb1 elemei: "+tomb1);
+        document.write("<br>Tömb2 elemei: "+tomb2)
+        let metszet = TombMetszet(tomb1,tomb2)
+        document.write("<br>A két tömb metszete: " +metszet)
+        document.write("<hr>");
+        document.write("2004ben csatlakozott országok: "+ AdottEviCsatlakozok("2004"))
+        document.write("<br>Magyarország megkeresése:"+ OrszagKereso("Magyarország"))
+    </script>
+</body>
+</html>
