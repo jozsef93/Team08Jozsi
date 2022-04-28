@@ -51,3 +51,26 @@ function IntervallumosPrimszamGenerator(alsoHatar: number, felsoHatar: number): 
         return generaltSzam
     }
 }
+
+//Teglalap kerület terület (tuple)
+function TeglalapKeruletTeruletTupleFuggveny(a:number,b:number):[number,number]{
+    var kerulet:number=2*(a+b);
+    var terulet:number=a*b;
+    return [kerulet,terulet]
+}
+// Univerzális tömb generátor
+function UniverzálisTombGeneratior(meret:number,alsoHatar:number,felsoHatar:number):Array<number>{
+    let generaltTomb:Array<number>=[];
+    for(var i=0;i<meret;i++){
+        generaltTomb.push(Math.round(Math.random()*(felsoHatar-alsoHatar))+alsoHatar)
+    }
+    return generaltTomb;
+}
+//összegzes tetele
+function Tombosszege(beTomb:Array<number>):number{
+    var osszeg:number=0;
+    for(var i=0;i<beTomb.length; i++){
+        osszeg+=beTomb[i];
+    }
+    return osszeg;
+}
